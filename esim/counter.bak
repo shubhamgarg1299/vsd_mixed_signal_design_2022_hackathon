@@ -1,0 +1,301 @@
+EESchema Schematic File Version 2
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:power
+LIBS:eSim_Plot
+LIBS:transistors
+LIBS:conn
+LIBS:eSim_User
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:eSim_Analog
+LIBS:eSim_Devices
+LIBS:eSim_Digital
+LIBS:eSim_Hybrid
+LIBS:eSim_Miscellaneous
+LIBS:eSim_Power
+LIBS:eSim_Sources
+LIBS:eSim_Subckt
+LIBS:eSim_Nghdl
+LIBS:eSim_Ngveri
+LIBS:eSim_SKY130
+LIBS:eSim_SKY130_Subckts
+LIBS:counter-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L adc_bridge_2 U4
+U 1 1 633E60BA
+P 3650 3250
+F 0 "U4" H 3650 3250 60  0000 C CNN
+F 1 "adc_bridge_2" H 3650 3400 60  0000 C CNN
+F 2 "" H 3650 3250 60  0000 C CNN
+F 3 "" H 3650 3250 60  0000 C CNN
+	1    3650 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L dac_bridge_4 U5
+U 1 1 633E6113
+P 6150 3400
+F 0 "U5" H 6150 3400 60  0000 C CNN
+F 1 "dac_bridge_4" H 6150 3700 60  0000 C CNN
+F 2 "" H 6150 3400 60  0000 C CNN
+F 3 "" H 6150 3400 60  0000 C CNN
+	1    6150 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L resistor R3
+U 1 1 633E6166
+P 6800 3250
+F 0 "R3" H 6850 3380 50  0000 C CNN
+F 1 "1k" H 6850 3200 50  0000 C CNN
+F 2 "" H 6850 3230 30  0000 C CNN
+F 3 "" V 6850 3300 30  0000 C CNN
+	1    6800 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L capacitor C1
+U 1 1 633E61BF
+P 7300 3350
+F 0 "C1" H 7325 3450 50  0000 L CNN
+F 1 "1u" H 7325 3250 50  0000 L CNN
+F 2 "" H 7338 3200 30  0000 C CNN
+F 3 "" H 7300 3350 60  0000 C CNN
+	1    7300 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR4
+U 1 1 633E6233
+P 7300 3500
+F 0 "#PWR4" H 7300 3250 50  0001 C CNN
+F 1 "GND" H 7300 3350 50  0000 C CNN
+F 2 "" H 7300 3500 50  0001 C CNN
+F 3 "" H 7300 3500 50  0001 C CNN
+	1    7300 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L pulse v1
+U 1 1 633E6251
+P 2200 3650
+F 0 "v1" H 2000 3750 60  0000 C CNN
+F 1 "pulse" H 2000 3600 60  0000 C CNN
+F 2 "R1" H 1900 3650 60  0000 C CNN
+F 3 "" H 2200 3650 60  0000 C CNN
+	1    2200 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L resistor R1
+U 1 1 633E6328
+P 2300 3250
+F 0 "R1" H 2350 3380 50  0000 C CNN
+F 1 "1k" H 2350 3200 50  0000 C CNN
+F 2 "" H 2350 3230 30  0000 C CNN
+F 3 "" V 2350 3300 30  0000 C CNN
+	1    2300 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L pulse v2
+U 1 1 633E639E
+P 2750 3750
+F 0 "v2" H 2550 3850 60  0000 C CNN
+F 1 "pulse" H 2550 3700 60  0000 C CNN
+F 2 "R1" H 2450 3750 60  0000 C CNN
+F 3 "" H 2750 3750 60  0000 C CNN
+	1    2750 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR2
+U 1 1 633E63E4
+P 2750 4200
+F 0 "#PWR2" H 2750 3950 50  0001 C CNN
+F 1 "GND" H 2750 4050 50  0000 C CNN
+F 2 "" H 2750 4200 50  0001 C CNN
+F 3 "" H 2750 4200 50  0001 C CNN
+	1    2750 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR1
+U 1 1 633E640A
+P 2200 4100
+F 0 "#PWR1" H 2200 3850 50  0001 C CNN
+F 1 "GND" H 2200 3950 50  0000 C CNN
+F 2 "" H 2200 4100 50  0001 C CNN
+F 3 "" H 2200 4100 50  0001 C CNN
+	1    2200 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L resistor R2
+U 1 1 633E6727
+P 3100 3650
+F 0 "R2" H 3150 3780 50  0000 C CNN
+F 1 "1k" H 3150 3600 50  0000 C CNN
+F 2 "" H 3150 3630 30  0000 C CNN
+F 3 "" V 3150 3700 30  0000 C CNN
+	1    3100 3650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7000 3200 7850 3200
+Wire Wire Line
+	3050 3200 2500 3200
+Wire Wire Line
+	3050 3300 2750 3300
+Wire Wire Line
+	3050 3450 3050 3200
+$Comp
+L GND #PWR3
+U 1 1 633E69D1
+P 3050 3750
+F 0 "#PWR3" H 3050 3500 50  0001 C CNN
+F 1 "GND" H 3050 3600 50  0000 C CNN
+F 2 "" H 3050 3750 50  0001 C CNN
+F 3 "" H 3050 3750 50  0001 C CNN
+	1    3050 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L plot_v1 U6
+U 1 1 633E6CA5
+P 7300 3400
+F 0 "U6" H 7300 3900 60  0000 C CNN
+F 1 "plot_v1" H 7500 3750 60  0000 C CNN
+F 2 "" H 7300 3400 60  0000 C CNN
+F 3 "" H 7300 3400 60  0000 C CNN
+	1    7300 3400
+	1    0    0    -1  
+$EndComp
+Text GLabel 7850 3200 2    60   Input ~ 0
+o3
+Connection ~ 7300 3200
+$Comp
+L plot_v1 U7
+U 1 1 633E6D32
+P 8200 3500
+F 0 "U7" H 8200 4000 60  0000 C CNN
+F 1 "plot_v1" H 8400 3850 60  0000 C CNN
+F 2 "" H 8200 3500 60  0000 C CNN
+F 3 "" H 8200 3500 60  0000 C CNN
+	1    8200 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L plot_v1 U8
+U 1 1 633E6D96
+P 8400 3600
+F 0 "U8" H 8400 4100 60  0000 C CNN
+F 1 "plot_v1" H 8600 3950 60  0000 C CNN
+F 2 "" H 8400 3600 60  0000 C CNN
+F 3 "" H 8400 3600 60  0000 C CNN
+	1    8400 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L plot_v1 U9
+U 1 1 633E6E82
+P 8600 3700
+F 0 "U9" H 8600 4200 60  0000 C CNN
+F 1 "plot_v1" H 8800 4050 60  0000 C CNN
+F 2 "" H 8600 3700 60  0000 C CNN
+F 3 "" H 8600 3700 60  0000 C CNN
+	1    8600 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 3300 6700 3300
+Wire Wire Line
+	8400 3400 6700 3400
+Wire Wire Line
+	8600 3500 6700 3500
+Text GLabel 8200 3300 2    60   Input ~ 0
+o2
+Text GLabel 8400 3400 2    60   Input ~ 0
+o1
+Text GLabel 8600 3500 2    60   Input ~ 0
+o0
+$Comp
+L plot_v1 U3
+U 1 1 633E6F27
+P 3050 3400
+F 0 "U3" H 3050 3900 60  0000 C CNN
+F 1 "plot_v1" H 3250 3750 60  0000 C CNN
+F 2 "" H 3050 3400 60  0000 C CNN
+F 3 "" H 3050 3400 60  0000 C CNN
+	1    3050 3400
+	1    0    0    -1  
+$EndComp
+Text GLabel 2700 3050 0    60   Input ~ 0
+clk
+Wire Wire Line
+	2700 3050 2850 3050
+Wire Wire Line
+	2850 3050 2850 3200
+Connection ~ 2850 3200
+Text GLabel 2750 3300 0    60   Input ~ 0
+reset
+$Comp
+L plot_v1 U2
+U 1 1 633E701E
+P 2900 3050
+F 0 "U2" H 2900 3550 60  0000 C CNN
+F 1 "plot_v1" H 3100 3400 60  0000 C CNN
+F 2 "" H 2900 3050 60  0000 C CNN
+F 3 "" H 2900 3050 60  0000 C CNN
+	1    2900 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 2850 2900 3300
+Connection ~ 2900 3300
+$Comp
+L shubham_counter4bit U?
+U 1 1 63413DBF
+P 2050 5100
+F 0 "U?" H 4900 6900 60  0000 C CNN
+F 1 "shubham_counter4bit" H 4900 7100 60  0000 C CNN
+F 2 "" H 4900 7050 60  0000 C CNN
+F 3 "" H 4900 7050 60  0000 C CNN
+	1    2050 5100
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
